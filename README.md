@@ -13,8 +13,6 @@ A Kanban-style task management application built with **React**, **Tailwind CSS*
 - Drag & drop tasks across columns (powered by `react-beautiful-dnd`)
 - Backend persistence with file-based JSON storage
 
----
-
 ## Project Structure
 
 DishaAI-Task/
@@ -28,9 +26,6 @@ DishaAI-Task/
 │ └── vite.config.js
 └── my-backend/ # Backend (Node + Express)
 └── server.js
-
-
----
 
 ## Setup Instructions
 
@@ -56,10 +51,19 @@ It reads and writes to: my-react-app/src/data/boardData.json
 
 ## Deployment
 
-Frontend: Deployed on Vercel
-a. Ensured autoprefixer is installed
-b. Ensured a valid build script in my-react-app/package.json
-Backend: Optional Self-Host (not deployed to Vercel)
+Frontend: Deployed on Vercel 
+a. Go to frontend folder: 
+    cd my-react-app
+b. Install dependencies: 
+    npm install
+c. Test locally: 
+    npm run dev
+d. Deploy to Vercel: Go to Vercel-> connect git repo-> set root dir to my-react-app/-> set build command (npm run build)-> set output dir (dist)-> deploy
+e. Backend: Optional Self-Host (not deployed to Vercel)
+    cd my-backend
+    npm install
+    node server.js
+f. Backend runs on: http://localhost:5000 and reads/writes task data from: my-react-app/src/data/boardData.json
 
 ## Tech Stack
 
@@ -75,7 +79,7 @@ API Endpoints:
 GET /board - fetch task board data
 POST /board - save updated board data
 
-Chat of AI help: 
+## Chat of AI help: 
 
 https://claude.ai/share/88f7469e-2458-40c5-84d9-ac76ee552ace
 https://chatgpt.com/share/682b691e-ec7c-8000-b221-667f0400326d
