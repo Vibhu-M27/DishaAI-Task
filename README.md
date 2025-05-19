@@ -75,5 +75,8 @@ API Endpoints:
 GET /board - fetch task board data
 POST /board - save updated board data
 
+Chat of AI help: 
 
+https://claude.ai/share/88f7469e-2458-40c5-84d9-ac76ee552ace
+https://chatgpt.com/share/682b691e-ec7c-8000-b221-667f0400326d
 
